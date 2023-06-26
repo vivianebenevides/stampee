@@ -1,0 +1,24 @@
+.etiquette {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(133, 17, 17);
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 15px 10px;
+}
+
+.etiquette h3{
+    font-size: 15px;
+}
+
+.etiquette p{
+    font-size: 15px;
+}
+
+.carte-etiquette {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

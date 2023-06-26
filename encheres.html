@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Viviane da Silva">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Stampee</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-compte">
+                <a href="accueil.html"><img class="logo-compte-img" src="assets/img/logo/logo-gold.webp" alt="logo"></a>
+                <div class="recherche-bar">
+                    <!-- <label for="recherche"></label> -->
+                    <input type="text" id="recherche" name="recherche" placeholder="Entrer votre recherche"  aria-label="recherche">
+                    <img class="recherche-icon" src="assets/img/icones/recherche.svg" alt="recherche">
+                </div>
+                <div class="zone-client">
+                    <div class="icones-zone-client">
+                        <div class="achats">
+                            <img src="assets/img/icones/bag_shopping_icon.svg" alt="">
+                            <p>0</p>
+                        </div>
+                        <div class="devise">
+                            <p>CAD</p>
+                            <img src="assets/img/icones/down_b_arrow_icon_gold.svg" alt="">
+                        </div>
+                    </div>
+                    <a class="bouton bouton-moyenne-gold" href="#">Se connecter</a>
+                </div>
+            </div>
+            <div class="zone-menu-primaire">
+                <ul class="menu-primaire">
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li class="sous-menu">
+                        <div class="fleche-sousmenu">
+                            <a href="encheres.html">Enchères</a>
+                            <img src="assets/img/icones/down_b_arrow_icon.svg" alt="">
+                        </div>
+                        <ul class="liste-sousmenu">
+                            <li><a href="#">Enchères en cours</a></li>
+                            <li><a href="#">Enchères tenues</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Vendre vos timbres</a></li>
+                    <li class="sous-menu">
+                        <div class="fleche-sousmenu">
+                            <a href="#">À propos</a>
+                            <img src="assets/img/icones/down_b_arrow_icon.svg" alt="">
+                        </div>
+                        <ul class="liste-sousmenu">
+                            <li><a href="#">La philatélie, c'est la vie</a></li>
+                            <li><a href="#">Biographie du Lord Reginald Stampee</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <header class="texte-sur-image"> 
+            <img src="assets/img/entete-galerie.webp" alt="">
+            <h1>Les timbres les plus rares au monde</h1> 
+            <p>Trouvez ici ce qui manquait à votre collection</p>    
+        </header>
+
+        <section>
+            <div class="container">
+                <aside class="filtres">
+                    <h2>Filtrer votre recherche</h2>
+                    <form class="filtres-form"> 
+                        <div class="filtre">
+                            <!-- <label for="recherche"></label> -->
+                            <input type="text" id="recherche-filtre" name="recherche-filtre" placeholder="Entrer votre recherche"  aria-label="recherche">
+                        </div>
+
+                        <div class="filtre">
+                            <label for="recherche-lot">Numéro de lot</label>
+                            <input type="text" id="recherche-lot" name="recherche-lot" aria-label="recherche-lot">
+                        </div>
+                            
+                        <div class="filtre">
+                            <label for="pays">Pays</label><br>
+                            <select id="pays" name="pays">
+                                <option value="tous">Tous</option>
+                                <option value="British-commonwealth">British commonwealth</option>
+                                <option value="France">France</option>
+                                <option value="Canada">Canada</option>
+                                <option value="USA">USA</option>
+                            </select>
+                        </div>
+
+                        <div class="filtre">
+                            <label for="categorie">Condition</label><br>
+                            <select id="categorie" name="categorie">
+                                <option value="tous">Tous</option>
+                                <option value="usage">Usagé</option>
+                                <option value="neuf">Neuf</option>
+                                <option value="rare">Rare</option>
+                            </select>
+                        </div>
+
+                        <div class="filtre">
+                            <label>Années</label>
+                            <div class="filtre-one-ligne">
+                                <div>
+                                    <label for="annee1">De</label>
+                                    <input type="text" id="annee1" name="annee1">
+                                </div>
+                                <div>
+                                    <label for="annee2">À</label>
+                                    <input type="text" id="annee2" name="annnee2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filtre">
+                            <label>Prix</label>
+                            <div class="filtre-one-ligne">
+                                <div>
+                                    <label for="prix-min">De</label>
+                                    <input type="text" id="prix-min" name="prix-min">
+                                </div>
+                                <div>
+                                    <label for="prix-max">À</label>
+                                    <input type="text" id="prix-max" name="prix-max">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filtre">
+                            <label>Certification</label>
+                            <div>
+                                <input type="radio" name="certification" id= "certifie" value="certifie">
+                                <label for="certifie">Certifié</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="certification" id= "non-certifie" value="non-certifie">
+                                <label for="non-certifie">Non certifié</label>
+                            </div>
+                        </div>
+                        <div class="boutton-filtrer">
+                            <a class="bouton bouton-grand-gold" href="#">Filtrer</a>
+                        </div>
+                    </form>
+                </aside>
+
+                <section class="grille">
+                    <div class="affichage">
+                        <div class="config-affichage">
+                            <div class="icones-affichage">
+                                <a href="#">
+                                    <img src="assets/img/icones/grid_icon.svg" alt="affichage-grid">
+                                </a>
+                                <a href="#">
+                                    <img src="assets/img/icones/list_menu.svg" alt="affichage-liste">
+                                </a>
+                            </div>   
+                        </div>
+                       
+                        <div class="nombre-pages">
+                            <img src="assets/img/icones/arrow_back_left_icon.svg" alt="fleche-gauche">
+                            <ul class="liste-pages">
+                                <li class="page-selectionnee">1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>...</li>
+                                <li>12</li>
+                            </ul>
+                            <img src="assets/img/icones/arrow_next_right_icon.svg" alt="fleche-droite">
+                        </div>
+
+                        <div class="bouton-petit fleche-sousmenu">
+                            <p>Trier</p>
+                            <a href="#"><img src="assets/img/icones/down_b_arrow_icon.svg" alt="fleche"></a>   
+                        </div>
+                    </div>
+                    <div class="galerie">
+                        <article class="carte">
+                                <div class="carte-img">
+                                    <img src="assets/img/timbres/bahamas-stamp-17-queen-victoria-1p-1863.webp" alt="">
+                                </div>
+                                <div class="carte-texte">
+                                    <h3>LS 178</h3>
+                                    <h3>Bahamas SG54a 1890 6d Mauve</h3>
+                                    <p class="carte-texte-description">BAHAMAS - 1901-03 3s black & green Queen's Staircase, SG 61, vfm, fresh.</p>
+                                    <p>$245.00</p>
+                                    <a class="bouton bouton-moyenne-rouge" href="#">Aller à l'enchère</a>
+                                </div>
+                        
+                        </article>
+                        <article class="carte">
+                            <div class="carte-img">
+                                <img src="assets/img/timbres/canada-stamp-116a-king-george-v-10-1912.webp" alt="">
+                            </div>
+                            <div class="carte-texte">
+                                <h3>LS 198</h3>
+                                <h3>Canada #23 XF Large Queen with 2 Ring</h3>
+                                <p class="carte-texte-description">CANADA - 1836 (Jun) EL from Terrebonne 'Lower Canada' (near Montreal) to Kirky Lonsdale, via Liverpool with framed 'LIVERPOOL / SHIP LETTER' in black. Ex Wood Collection.</p>
+                                <p>$455.00</p>
+                                <a class="bouton bouton-moyenne-rouge" href="#">Aller à l'enchère</a>
+                            </div>
+                        </article>
+                        <article class="carte">
+                            <div class="carte-img">
+                                <img src="assets/img/timbres/canada-stamp-158-bluenose-50-1929.webp" alt="">
+                            </div>
+                            <div class="carte-texte">
+                                <h3>LS 243</h3>
+                                <h3>Bluenose VF MNH Cat$700 Canada mint</h3>
+                                <p class="carte-texte-description">CANADA - Post Office Fresh, Bluenose #158 F, MNH Cat$400 Canada mint stamp.</p>
+                                <p>$94.00</p>
+                                <a class="bouton bouton-moyenne-rouge" href="#">Aller à l'enchère</a>
+                            </div>
+                        </article>
+                        <article class="carte">
+                            <div class="carte-img">
+                                <img src="assets/img/timbres/canada_1868_2c_grass_green_sg48_fine_used_30.webp" alt="">
+                            </div>
+                            <div class="carte-texte">
+                                <h3>LS 259</h3>
+                                <h3>Antigua 1863-1867 SC 4 Mint</h3>
+                                <p class="carte-texte-description">1906-11 5m scarlet & black 'Arab Postman', variety 'OVERPRINT DOUBLE, ONE DIAGONAL', SG A9ab, marginal example, hinge on the selvedge, the stamp being never hinged mint.</p>
+                                <p>$175.00</p>
+                                <a class="bouton bouton-moyenne-rouge" href="#">Aller à l'enchère</a>
+                            </div>
+                        </article>
+                        <article class="carte">
+                            <div class="carte-img">
+                                <img src="assets/img/timbres/canada_1852_10d_dp_blue_sg15_cv_14_000.webp" alt="">
+                            </div>
+                            <div class="carte-texte">
+                                <h3>LS 123</h3>
+                                <h3>Australia - Tasmania 1857-1869 SC 13 Mint</h3>
+                                <p class="carte-texte-description">AUSTRALIAN STATES - TASMANIA 1855 1d carmine imperf, SG 14, very fine used with 4 margins. A very attractive example, BPA certificate signed Robson Lowe.</p>
+                                <p>$795.00</p>
+                                <a class="bouton bouton-moyenne-rouge" href="#">Aller à l'enchère</a>
+                            </div>
+                        </article>
+                        <article class="carte">
+                            <div class="carte-img">
+                                <img src="assets/img/timbres/canada_1876_10c_pale_lilac_magenta_sg87_fine_used_12.webp" alt="">
+                            </div>
+                            <div class="carte-texte">
+                                <h3>LS 239</h3>
+                                <h3>U.S. #11A Used with PF Cert</h3>
+                                <p class="carte-texte-description">U.S. - 1849 20c black on white Ceres, Yvert 3a, SG 7,vfu,4 large margins.</p>
+                                <p>$255.00</p>
+                                <a class="bouton bouton-moyenne-rouge" href="#">Aller à l'enchère</a>
+                            </div>
+                        </article>
+                        <article class="carte">
+                            <div class="carte-img">
+                                <img src="assets/img/timbres/canada_1879_5c_olivegreen_sg97_fine_used_2_14.webp" alt="">
+                            </div>
+                            <div class="carte-texte">
+                                <h3>LS 102</h3>
+                                <h3>Canada #5 Very Fine Used With Ideal Light</h3>
+                                <p class="carte-texte-description">CANADA - REVENUE Bill Stamp 1865 50c lilac IMPERF PLATE PROOF on card.</p>
+                                <p>$55.00</p>
+                                <a class="bouton bouton-moyenne-rouge" href="#">Aller à l'enchère</a>
+                            </div>
+                        </article>
+                        <article class="carte">
+                            <div class="carte-img">
+                                <img src="assets/img/timbres/canada_1897_6c_brown_sg159_fine_used_2_22.webp" alt="">
+                            </div>
+                            <div class="carte-texte">
+                                <h3>LS 199</h3>
+                                <h3>Canada 1897 6c Brown SG159 Fine Used</h3>
+                                <p class="carte-texte-description">CANADA - 1942-48 2c brown complete BOOKLET PANE of 4+2, SG 376a, NHM,fresh.</p>
+                                <p>$455.00</p>
+                                <a class="bouton bouton-moyenne-rouge" href="#">Aller à l'enchère</a>
+                            </div>
+                        </article>
+                        <article class="carte">
+                            <div class="carte-img">
+                                <img src="assets/img/timbres/canada_1859_12_1-2c_deep_yellow-green_sg39_fine_used_2_30.webp" alt="">
+                            </div>
+                            <div class="carte-texte">
+                                <h3>LS 159</h3>
+                                <h3>Canada 1859 12 1/2c Deep Yellow-Green</h3>
+                                <p class="carte-texte-description">CANADA - 1910 15c yellow-green Queen Victoria V, litho printing, SG 105, fine used.</p>
+                                <p>$113.00</p>
+                                <a class="bouton bouton-moyenne-rouge" href="#">Aller à l'enchère</a>
+                            </div>
+                        </article>
+                        <article class="carte">
+                            <div class="carte-img">
+                                <img src="assets/img/timbres/papouasie-nouvelle-guinee-stamp-c2a-lakatoi-1930.webp" alt="">
+                            </div>
+                            <div class="carte-texte">
+                                <h3>LS 154</h3>
+                                <h3>Papua - Scott# 62 - Used Part</h3>
+                                <p class="carte-texte-description">PAPUA - G.R.I. Stamps of German New Guinea 1914-15 Setting 1 6mm 1d on 5pf. green (position 7 from the setting of ten), SG 2, mint with toned gum.</p>
+                                <p>$876.00</p>
+                                <a class="bouton bouton-moyenne-rouge" href="#">Aller à l'enchère</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="items-pages">
+                        <h4>Items par page : </h4>
+                        <a href="#">10 </a>
+                        <a href="#">| 25 </a>
+                        <a href="#">| 50 </a>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="bulletin">
+            <img src="assets/img/logo/logo-white.webp" alt="logo-white">
+            <div class="bulletin-texte">
+                <h1>Notre équipe est prête à vous aider à trouver le timbre insaisissable pour compléter votre collection.</h1>
+                <p>Abonnez-vous aujourd'hui et restez connecté</p>
+            </div>
+            <div class="bulletin-email"> 
+                <div>
+                    <!-- <label for="email"></label> -->
+                    <input type="text" id="email" name="email" placeholder="Entrer votre courriel"  aria-label="email">
+                </div>
+                <a class="bouton bouton-petit-gold" href="#">S'abonner</a> 
+            </div>
+        </section>
+
+        <section class="menu-secondaire">
+            <div class="menu-secondaire-gauche">
+                <div class="coordonnees">    
+                    <h2>Nos coordonnées</h2>
+                    <div>
+                        <p>Stampee Auctions</p>
+                        <p>London SW1A 0AA, UK</p>
+                    </div>
+                    <div class="coordonnee-liens">
+                        <a href="#">Téléphone: +44 20 7219 4272</a>
+                        <a href="#">Email: stampee@stampee.com</a>
+                    </div>
+                </div>
+                <div class="mon-compte">    
+                    <h2>Mon compte</h2>
+                    <a class="fleche-lien bordure" href="#">
+                        <p>CONNEXION</p>
+                        <img src="assets/img/icones/arrow_next_right_icon.svg" alt="fleche-droite">
+                    </a>
+                    <a class="fleche-lien" href="#">
+                        <p>CRÉER UN COMPTE</p>
+                        <img src="assets/img/icones/arrow_next_right_icon.svg" alt="fleche-droite">
+                    </a>
+                </div>
+            </div>
+            <div class="menu-secondaire-droit">
+                <div class="contact">    
+                    <h2>Service client</h2>
+                    <div>
+                        <p>9:00 am - 5:00 pm (Lundi-Vendredi)</p>
+                        <p>1234 567 890 | +44 1234 567 890</p>
+                    </div>
+                    <div>
+                        <a class="fleche-lien espacement-fleche" href="#">
+                            <p>CONTACTEZ-NOUS</p>
+                            <img src="assets/img/icones/arrow_next_right_icon.svg" alt="fleche-droite">
+                        </a>
+                    </div>
+                </div>
+                <div >    
+                    <h2>Liens utiles</h2>
+                    <div class="liens-utiles">
+                        <a href="#">À propos</a>
+                        <a href="#">Livraison & Retours</a>
+                        <a href="#">Valorisations</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">Témoignages</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pied-de-page-sociaux">
+            <div class="reseaux-sociaux">
+                <a href="#">
+                    <img src="assets/img/icones/facebook_icon.svg" alt="facebook">
+                </a>
+                <a href="#">
+                    <img src="assets/img/icones/twitter_bird_icon.svg" alt="twitter">
+                </a>
+                <a href="#">
+                    <img src="assets/img/icones/instagram_icon.svg" alt="intagram">
+                </a>
+            </div>
+            <div class="pied-de-page-sociaux-liens">
+                <a href="#">TERMS & CONDITIONS</a>
+                <a href="#">PRIVACY</a>
+                <a href="#">COOKIES</a>
+            </div>
+            <div>
+                <p>© 2023 STAMPEE AUCTIONS. TOUS LES DROITS SONT RÉSERVÉS.</p>
+            </div>
+        </section>
+    </footer>
+    
+</body>
+</html>

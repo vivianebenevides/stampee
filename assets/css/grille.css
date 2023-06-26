@@ -1,0 +1,106 @@
+/********* Galerie ***********/
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+    gap: 10px;
+}
+
+.grille {
+    flex-grow: 1;
+  	margin: 20px 50px; 
+}
+
+.affichage {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+/********* Nombre de pages ***********/
+.nombre-pages {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nombre-pages img {
+    max-width: 40px;
+    cursor: pointer;
+}
+
+.liste-pages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    color: #1e273f;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.liste-pages li {
+    cursor: pointer;
+}
+
+.page-selectionnee {
+    display: flex;
+    background-color: rgb(133, 17, 17);
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.items-pages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    word-spacing: 5px;
+}
+
+.items-pages > h4,
+.items-pages > a {
+  white-space: pre;
+}
+
+.items-pages  a {
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #1e273f;
+  }
+
+/********* Affichage Grille ou Liste ***********/
+.config-affichage {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+
+.config-affichage a {
+    text-decoration: none;
+}
+
+.icones-affichage img{
+    width: 35px;
+}
+
+.icones-affichage a {
+    text-decoration: none;
+}
+
+/********* Trier ***********/
+.bouton-petit {
+	background-color: rgb(133, 17, 17);
+    padding: 4px 8px;
+    color: #ffffff;
+    border: 1px solid  #966f2e;
+    border-radius: 4px;
+}

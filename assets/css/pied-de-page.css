@@ -1,0 +1,204 @@
+/********* Pied de page ***********/
+footer {
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(133, 17, 17);
+    color: #ffffff;
+    margin-top: 60px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/********* Infolettre ***********/
+.bulletin {
+    display: inline-block;
+    margin: 40px 0;
+    padding: 20px;
+    gap: 80px;
+    border-bottom: 3px solid #966f2e;
+    text-align: center;
+}
+
+.bulletin img {
+    width: 250px;
+}
+
+.bulletin-texte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 40px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.bulletin-texte h1 {
+    font-size: 32px;
+}
+
+.bulletin-texte p {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bulletin-email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.bulletin-email input[type="text"] {
+    height: 50px;
+    width: 100%;
+    min-width: 800px;
+    border: 1px solid  #966f2e;
+    border-radius: 4px;
+}
+
+.bulletin-email input[placeholder="Entrer votre courriel"] {
+    text-align: center;
+}
+
+.bouton-petit-gold {
+    background-color: #a78243;
+    width: 150px;
+    height: 50px;
+    border: 1px solid  #966f2e;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/********* Menu secondaire ***********/
+.menu-secondaire {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    gap: 130px;
+}
+
+.menu-secondaire-gauche, .menu-secondaire-droit {
+    display: flex;
+    flex-direction: row;
+    gap: 130px;
+}
+
+.menu-secondaire p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.menu-secondaire a {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.menu-secondaire h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.coordonnees  {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.coordonnees>div{
+    margin-bottom: 20px;
+}
+
+.coordonnee-liens {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.liens-utiles {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+}
+
+.contact  {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.fleche-lien {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.fleche-lien>img{
+    width: 40px;
+}
+
+.espacement-fleche {
+    display: flex;
+}
+
+.contact>div{
+    margin-bottom: 20px;
+}
+
+.bordure {
+    border-bottom: 3px solid #966f2e;
+    padding-bottom: 20px;
+}
+
+.mon-compte>.bordure {
+  margin-bottom: 20px;
+
+}
+
+/********* Zone sociaux et infos sur le site ***********/
+.pied-de-page-sociaux {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.reseaux-sociaux {
+    display: flex;
+    gap: 20px;
+}
+
+.pied-de-page-sociaux p {
+    font-size: 12px;
+}
+
+.reseaux-sociaux img {
+    width: 30px;
+}
+
+.pied-de-page-sociaux-liens {
+    display: flex;
+    gap: 20px;
+    font-size: 10px;
+}
+
+.pied-de-page-sociaux-liens a{
+    color: #ffffff;
+}
+

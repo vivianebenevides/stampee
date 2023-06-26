@@ -1,0 +1,78 @@
+/********* Filtres ***********/
+.filtres {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filtres h2 {
+    display: flex;
+    padding-top: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtres-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.filtre {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #1e273f;
+}
+
+.filtre>label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bouton-grand-gold {
+    background-color: #a78243;
+    width: 220px;
+    height: 35px;
+    border: 1px solid  #966f2e;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.filtre-one-ligne {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.filtre-one-ligne label{
+    align-items: baseline;
+}
+
+.filtre-one-ligne input[type="text"] {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #966f2e;
+    border-radius: 4px;
+}
+
+input[id="recherche-lot"], input[id="recherche-filtre"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #966f2e;
+    border-radius: 4px;
+}
+
+.filtre input[placeholder="Entrer votre recherche"] {
+    text-align: center;
+}
+
+.filtre>select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #966f2e;
+    border-radius: 4px;
+    background-color: #ffffff;
+
+}

@@ -1,0 +1,31 @@
+/******** Barre de recherche ********/
+
+.recherche-bar {
+	display: flex;
+	position: relative;
+	width: 400px;
+	justify-content: right;
+	align-items: center;
+	
+}
+
+.recherche-bar input[type="text"] {
+	width: 100%;
+	padding: 8px;
+	border: none;
+	border-radius: 4px;
+	border: 1px solid #966f2e;
+	font-size: 16px;
+}
+
+.recherche-bar input[placeholder="Entrer votre recherche"] {
+    text-align: center;
+}
+
+.recherche-icon {
+	position: absolute;
+	height: 25px;
+	cursor: pointer;
+	margin-right: 10px;
+	
+}

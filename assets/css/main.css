@@ -1,0 +1,56 @@
+/******** Règles générales ********/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: 'EB Garamond', serif;
+	color: #1e273f;
+}
+
+a {
+	font-family: 'Roboto', sans-serif;
+}
+
+/******** Main / Container ********/
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 20px;
+	max-width: 100%;
+  	margin: 0 40px; 
+}
+
+.container h2 {
+	color: #1e273f;
+}
+
+section {
+	margin-top: 60px;
+}
+
+section>h2 {
+    padding-left: 70px;
+    font-size: 40px;
+}
+
+section>p {
+    padding-left: 70px;
+	padding-bottom: 10px;
+    font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+
+/******** Bouton ********/
+.bouton {
+	display: flex;  
+	color: #ffffff;
+	border-radius: 4px;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	}

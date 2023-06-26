@@ -1,0 +1,148 @@
+/********* Menu primaire ***********/
+.menu-primaire {
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+	align-items:center;
+	margin: 0;
+    padding: 15px;
+    background-color: rgb(133, 17, 17);
+    height: 50px;
+    justify-content: center;
+    gap: 100px;
+}
+
+/********* Logo ***********/
+.logo-compte {
+    display: flex;
+    flex-direction: row;
+    /* position: fixed; tentativa de fixar o menu no topo
+    top: 0; */
+    margin: 0;
+    padding: 20px 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.logo-compte-img {
+    width: 180px;
+}
+
+/********* Zone connexion e infos ***********/
+.zone-client {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.zone-client img {
+    width: 30px;
+}
+
+.icones-zone-client {
+    display: flex;
+    gap: 15px;
+}
+
+/********* Sac d'achats ***********/
+.achats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.achats p{
+    display: flex;
+    background-color: #966f2e;
+    color: #ffffff;
+    border: 1px solid #1e273f;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+/********* Choisir le devise ***********/
+.devise {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.devise img{
+    width: 20px;
+    cursor: pointer;
+}
+
+.devise p{
+    font-size: 20px;
+}
+
+/********* Connexion ***********/
+.bouton-moyenne-gold {
+    background-color: #a78243;
+    width: 150px;
+    height: 30px;
+    border: 1px solid  #966f2e;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/********* Menu ***********/
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/********* Menu derroulant ***********/
+.sous-menu {
+    position: relative;
+    z-index: 1;
+}
+
+.sous-menu > ul {
+    position: absolute;
+    width: max-content;
+    top: 100%;
+    left: -25%;
+    background-color: rgb(133, 17, 17);
+    text-align: center;
+    padding: 30px;
+}
+
+.sous-menu:not(:hover) > ul {
+    display: none;
+}
+
+.sous-menu li {
+    padding-bottom: 10px;
+}
+
+.fleche-sousmenu {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.fleche-sousmenu img{
+    width: 20px;
+}
+
+
+
+
+
+

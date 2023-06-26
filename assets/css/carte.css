@@ -1,0 +1,58 @@
+/********* Carte de timbre ***********/
+.carte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    max-height: 100%;
+    margin: 10px;
+    border: 1px solid #966f2e;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.carte-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 230px;
+    width: 180px;
+}
+
+.carte-img>img {
+    object-fit: cover;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.carte-texte {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.carte-texte-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;  
+}
+
+.carte-texte p{
+    padding-top: 15px;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; 
+}
+
+.bouton-moyenne-rouge {
+    background-color: rgb(133, 17, 17);
+    width: 180px;
+    height: 30px;
+    border: 1px solid  #966f2e;
+    margin-top: 15px;
+    font-size: 14px;
+}

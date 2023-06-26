@@ -1,0 +1,26 @@
+.carte-container-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.container-horizontal {
+    overflow-x: auto;
+
+}
+
+.container-horizontal-fleches {
+    display: flex;
+    flex-direction: row;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.container-horizontal-fleches>img{
+    max-width: 100px;
+
+}
+
+
